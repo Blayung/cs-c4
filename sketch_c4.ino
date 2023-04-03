@@ -96,7 +96,7 @@ void loop(){
 
   lcd.setCursor(cursor_pos,0);
   input = keypad.getKey();
-  if (input){
+  if (input){ // TODO: Make the typing work like in cs (the input field is filled with "*" and numbers appear from the right)
     if((input=='A')||(input=='B')||(input=='C')||(input=='D')){} // Empty buttons
     else if(input=='*'){ // The delete button
       if (cursor_pos!=0){
@@ -132,9 +132,9 @@ void loop(){
             tone(BEEPER,700,1500);
             lcd.setCursor(0,0);
             lcd.clear();
-            lcd.print("The bomb has");
+            lcd.print("  THE BOMB HAS");
             lcd.setCursor(0,1);
-            lcd.print("been defused!");
+            lcd.print("  BEEN DEFUSED!");
             delay(1500);
             lcd.clear();
             clear_code();
@@ -147,9 +147,9 @@ void loop(){
             digitalWrite(DIODE_G,HIGH);
             lcd.setCursor(0,0);
             lcd.clear();
-            lcd.print("The bomb has");
+            lcd.print("  THE BOMB HAS");
             lcd.setCursor(0,1);
-            lcd.print("been planted!");
+            lcd.print("  BEEN PLANTED!");
             delay(1000);
             lcd.clear();
             clear_code();
@@ -157,7 +157,7 @@ void loop(){
         }else{ // Invalid code
           lcd.setCursor(0,0);
           lcd.clear();
-          lcd.print("Invalid code!");
+          lcd.print(" INVALID CODE!");
           delay(750);
           lcd.clear();
           clear_code();
