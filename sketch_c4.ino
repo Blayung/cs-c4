@@ -98,7 +98,7 @@ void loop(){
 
   lcd.setCursor(cursor_pos+4,0);
   input = keypad.getKey();
-  if (input){ // TODO: Make the typing work like in cs (the numbers appear from the right)
+  if (input){
     if((input=='A')||(input=='B')||(input=='C')||(input=='D')){} // Empty buttons
     else if(input=='*'){ // The delete button
       if (cursor_pos!=0){
