@@ -11,6 +11,6 @@ Parts used to build the bomb:
 - an 16x2 lcd screen
 - 3 resistors (220 ohms 5%)
 - a half plastic, half wooden box to store everything inside + some glue and screws to make it hold itself
-- a bunch of wires (if you want to know how to connect everything, you will have to figure it out yourself, I'm too lazy)
+- a bunch of wires (if you want to know how to connect everything, you will have to figure it out yourself, I'm too lazy to make a diagram showing the wiring)
 - some stuff to solder everything (idk what, my father was solding everything, cuz last time I almost burned the house down holding a piece of plastic, so I think that he wasn't sure about me solding anything)
 - a universal pcb board
