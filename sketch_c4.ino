@@ -59,7 +59,8 @@ void setup(){
   lcd.init();
   lcd.backlight();
   lcd.cursor();
-  lcd.print("    *******");
+  lcd.setCursor(4,0);
+  lcd.print("*******");
   lcd.setCursor(4,0);
 }
   
@@ -101,6 +102,7 @@ void loop(){
   if (input){
     if((input=='A')||(input=='B')||(input=='C')||(input=='D')){} // Empty buttons
     else if(input=='*'){ // The delete button
+      tone(BEEPER,200,100);
       if (cursor_pos!=0){
         cursor_pos--;
         code[cursor_pos]='*';
@@ -111,12 +113,14 @@ void loop(){
         }
       }
     }else if(input=='#'){ // The clear button
+      tone(BEEPER,200,100);
       clear_code();
       cursor_pos=0;
       lcd.clear();
       lcd.setCursor(4,0);
       lcd.print("*******");
     }else{ // A number was provided
+      tone(BEEPER,200,100);
       code[cursor_pos]=input;
       lcd.print(input);
 
@@ -162,6 +166,7 @@ void loop(){
             clear_code();
           }
         }else{ // Invalid code
+          tone(BEEPER,150,700);
           lcd.clear();
           lcd.setCursor(1,0);
           lcd.print("INVALID CODE!");
