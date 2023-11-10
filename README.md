@@ -1,7 +1,7 @@
 # cs-c4
-The code for my own csgo (or in the near future cs2) bomb replica. You won't do much with it unless you build a circuit just like mine.
+The code for my own bomb (it was supposed to be a replica from cs, but it really doesn't align that well with what you can see in the game, so it's better to think of it as a generic bomb). You won't do much with it unless you build a circuit just like mine.
 
-Parts used to build the bomb:
+The parts used to build the bomb:
 - an arduino nano
 - an rgb diode
 - a 3.7v 660mAh li-po battery
